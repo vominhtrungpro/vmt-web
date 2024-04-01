@@ -10,17 +10,22 @@ import {
 
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import Home from './pages/Home'
+import Main from './pages/Main'
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <div>Hello world!</div>,
-//   },
-//   {
-//     path: "/home",
-//     element: <Home />,
-//   }
-// ]);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>Hello world!</div>,
+  },
+  {
+    path: "/home",
+    element: <Home />,
+  },
+  {
+    path: "/main",
+    element: <Main />,
+  }
+]);
 
 
 
@@ -28,7 +33,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GoogleOAuthProvider clientId="326313607776-macv5cle3gs1ehtb53rcm95je9rd3tlh.apps.googleusercontent.com">
-      <Home />
+      <RouterProvider router={router} />
     </GoogleOAuthProvider>
   </React.StrictMode>
 );

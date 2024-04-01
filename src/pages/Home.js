@@ -29,7 +29,7 @@ class Request extends React.Component {
       }
     }
 
-    const apiUrl = 'http://192.168.1.12:5000/api/insert_music';
+    const apiUrl = 'http://192.168.1.17:5000/api/insert_music';
     const data = { url: this.state.inputValue };
 
     axios.post(apiUrl, data, {
