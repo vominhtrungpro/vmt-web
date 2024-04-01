@@ -1,13 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import Home from './pages/Home'
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <div>Hello world!</div>,
+//   },
+//   {
+//     path: "/home",
+//     element: <Home />,
+//   }
+// ]);
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <GoogleOAuthProvider clientId="326313607776-macv5cle3gs1ehtb53rcm95je9rd3tlh.apps.googleusercontent.com">
+      <Home />
+    </GoogleOAuthProvider>
   </React.StrictMode>
 );
 
