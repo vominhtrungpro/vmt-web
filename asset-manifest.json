@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vmt-web/static/css/main.3572f698.css",
-    "main.js": "/vmt-web/static/js/main.0aa5d75c.js",
+    "main.js": "/vmt-web/static/js/main.f0d168bd.js",
     "static/js/453.855d1235.chunk.js": "/vmt-web/static/js/453.855d1235.chunk.js",
     "index.html": "/vmt-web/index.html",
     "main.3572f698.css.map": "/vmt-web/static/css/main.3572f698.css.map",
-    "main.0aa5d75c.js.map": "/vmt-web/static/js/main.0aa5d75c.js.map",
+    "main.f0d168bd.js.map": "/vmt-web/static/js/main.f0d168bd.js.map",
     "453.855d1235.chunk.js.map": "/vmt-web/static/js/453.855d1235.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3572f698.css",
-    "static/js/main.0aa5d75c.js"
+    "static/js/main.f0d168bd.js"
   ]
 }
